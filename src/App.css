@@ -1,15 +1,19 @@
+body,
+html {
+  background: black;
+}
+
 input {
   width: 100%;
   height: 1em;
   padding: 0px;
-  font-size: 12px;
+  font-size: 18px;
   border: none;
   box-sizing: border-box;
+  background: black;
+  color:white;
 }
 
-.simple-keyboard {
-  max-width: 850px;
-}
 
 /*
   Theme: myTheme1
@@ -37,4 +41,62 @@ input {
 
 #root .simple-keyboard.myTheme1 + .simple-keyboard-preview {
   background: #1c4995;
+}
+
+
+
+.hg-button {
+  flex-grow: unset !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+
+.hg-button-arrowleft,
+.hg-button-arrowright,
+.hg-button-arrowup,
+.hg-button-arrowdown {
+  background-color: rgba(57, 73, 126, 0.6) !important;
+  flex-grow: unset !important;
+}
+.letterButton {
+  font-size: 142%;
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  font-size: 100%;
+  text-align: center;
+}
+
+.left {
+  grid-column: 1;
+  grid-row: 2;
+
+  color: darkslateblue;
+}
+
+.right {
+  grid-column: 2;
+  grid-row: 2;
+
+  color: rgb(57, 73, 126);
+}
+.left,
+.right {
+  font-size: 70%;
+  display: block;
+  text-align: center;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
